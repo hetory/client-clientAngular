@@ -6,7 +6,7 @@ const header = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
 
-const API_URL_CLIENT = 'http://localhost:8080/client';
+const API_URL_CLIENT = 'http://localhost:8080/v1/client';
 
 @Injectable({
   providedIn: 'root'
