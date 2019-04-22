@@ -2,17 +2,21 @@
 
 VERSION : [Angular CLI] version 7.3.8.
 
-Para Iniciar aplicação
+Iniciar aplicacao
 
-1 - Start no projeto client-server :
-    Start Class :  Application
+Baixar client-service e executar o comando na raiz
+  Executavel : client-service\mvnw.cmd    
+
+client Front. executar o comando na raiz
+  Executavel : client-clientAngular\angular.cmd
+
+URL: http://localhost:4200/create-client
 
 
-2 - Start no projeto client-angular
-    ng serve
-
-3 - Acessar a pagina :  http://localhost:4200/create-client
 
 
-"# client-clientAngular" 
-"# client-clientAngular" 
+
+
+
+  
+
