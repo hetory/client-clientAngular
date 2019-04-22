@@ -12,12 +12,13 @@ const API_URL_CLIENT = 'http://localhost:8080/v1/client';
   providedIn: 'root'
 })
 export class ApiService {
-
+    
   constructor(private http: HttpClient) { }
 
   save(client: any): Observable<any> {
     let result: Observable<Object>;
     result = this.http.post(API_URL_CLIENT, client,header);
+    console.log(result);
     return result;
   }
 }

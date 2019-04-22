@@ -11,15 +11,18 @@ export class CreateClientComponent implements OnInit {
 
 client: any = {};
 
+returnClient: String ='';
+
 constructor(private api: ApiService) { }
 
   ngOnInit() {
-
   }
 
   saveForm(form: NgForm) {
-   console.log(form);
    this.api.save(form).subscribe(() => {
-    }, error => console.error(error));
+     this.returnClient = "Cliente salvo com sucesso";
+    }, error => {
+        this.returnClient = "Erro ao salvar o cliente ";
+    });
   }
 }
